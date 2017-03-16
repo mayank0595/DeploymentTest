@@ -20,7 +20,12 @@
            <skipUTs>${skipTests}</skipUTs>
     </properties>
 
-	
+<distributionManagement>
+  <repository>
+    <id>QARelease</id>
+    <url>http://52.34.207.93:8080/nexus/content/repositories/QARelease</url>
+  </repository>
+</distributionManagement>	
     <repositories>
         <repository>
             <id>vaadin-prereleases</id>
