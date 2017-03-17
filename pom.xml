@@ -1,12 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="2.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.edurekademo.tutorial</groupId>
     <artifactId>DeploymentTest</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>2.0.5</version>
     <packaging>pom</packaging>
     <name>Address Book Edureka Demo</name>
     <url>https://github.com/mayank0595/DeploymentTest</url>
+<distributionManagement>
+  <repository>
+    <id>QARelease</id>
+    <url>http://52.37.207.104:8080/nexus/content/repositories/QARelease</url>
+  </repository>
+</distributionManagement>
     <properties>
         <build.number>SNAPSHOT</build.number>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,12 +25,7 @@
         <thucydides.version>0.9.268</thucydides.version>
         <jelastic.context>DeploymentTest</jelastic.context>
     </properties>
-    <distributionManagement>
-  <repository>
-    <id>QARelease</id>
-    <url>http://52.34.207.93:8080/nexus/content/repositories/QARelease</url>
-  </repository>
-</distributionManagement>
+
     <scm>
         <connection>scm:git:git@github.com:${github.account}/DeploymentTest.git</connection>
         <developerConnection>scm:git:git@github.com:${github.account}/DeploymentTest.git</developerConnection>
@@ -72,7 +73,7 @@
            <plugin>
 	<groupId>org.apache.tomcat.maven</groupId>
 	<artifactId>tomcat7-maven-plugin</artifactId>
-	<version>2.2</version>
+	<version>2.0.5</version>
 	<configuration>
 		<url>http://13.78.191.8:8080/manager/text</url>
 		<server>tomcat7server</server>
