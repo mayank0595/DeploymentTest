@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.edurekademo.tutorial</groupId>
     <artifactId>DeploymentTest</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>2.0.5</version>
     <packaging>pom</packaging>
     <name>Address Book Edureka Demo</name>
     <url>https://github.com/mayank0595/DeploymentTest</url>
@@ -67,7 +67,7 @@
            <plugin>
 	<groupId>org.apache.tomcat.maven</groupId>
 	<artifactId>tomcat7-maven-plugin</artifactId>
-	<version>2.2</version>
+	<version>2.0.51.0.5
 	<configuration>
 		<url>http://13.78.191.8:8080/manager/text</url>
 		<server>tomcat7server</server>
