@@ -7,6 +7,12 @@
     <packaging>pom</packaging>
     <name>Address Book Edureka Demo</name>
     <url>https://github.com/mayank0595/DeploymentTest</url>
+<distributionManagement>
+  <repository>
+    <id>QARelease</id>
+    <url>http://52.37.207.104:8080/nexus/content/repositories/QARelease</url>
+  </repository>
+</distributionManagement>
     <properties>
         <build.number>SNAPSHOT</build.number>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
